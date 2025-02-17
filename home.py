@@ -57,24 +57,6 @@ def load_users():
     except FileNotFoundError:
         pass
     return users
-
-def main():
-    print("Welcome to the login system")
-    users = load_users()
-    
-    while True:
-        choice = input("Do you want to register or login? (register/login): ").strip().lower()
-        if choice.lower() == 'register':
-            users = register(users)
-        elif choice.lower() == 'login':
-            users = login(users)
-        else:
-            print("Invalid choice. Please choose 'register' or 'login'.")
-        continue_choice = input("Do you want to continue? (yes/no): ").strip().lower()
-        if continue_choice != 'yes':
-            break
-
-if __name__ == "__main__":
-    main()
+# End of home.py
 
 
