@@ -1,6 +1,4 @@
-from home import User, register, login, load_users
-from support.destination import load_destinations
-from tourist.destinations import search_destinations
+from home import register, login, load_users
 from support.handle import handle_support_user
 from tourist.handle import handle_tourist_user
 

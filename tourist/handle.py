@@ -1,4 +1,4 @@
-from tourist.destinations import load_destinations, search_destinations, book_destination, show_calendar
+from tourist.destinations import load_destinations, search_destinations, book_destination, display_calendar
 
 def handle_tourist_user():
     destinations = load_destinations()  # Load destinations here
@@ -18,7 +18,9 @@ def handle_tourist_user():
             book_destination(destinations, booked_dates)
         elif choice == '3':
             # Show calendar with booked dates
-            show_calendar(booked_dates)
+            year = int(input("Enter the year: "))
+            month = int(input("Enter the month: "))
+            display_calendar(year, month,booked_dates)
         elif choice == '4':
             break
         else:
