@@ -63,7 +63,7 @@ def display_calendar(year, month, booked_dates):
     cal = calendar.monthcalendar(year, month)
 
     # Print the month and year
-    print(f"Calendar for {calendar.month_name[month]} {year}")
+    print(f"Booked activites for {calendar.month_name[month]} {year}")
     print("Mo Tu We Th Fr Sa Su")  # Print days of the week header
 
     # Loop through each week in the month
